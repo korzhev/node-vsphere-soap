@@ -1,3 +1,7 @@
+# This is fork for custom plugin
+
+TODO: make merge request
+
 # node-vsphere-soap
 
 [![Join the chat at https://gitter.im/reedog117/node-vsphere-soap](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/reedog117/node-vsphere-soap?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
