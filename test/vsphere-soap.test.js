@@ -126,7 +126,7 @@ describe('Client tests - query commands:', function (){
         skip: false, 
       };
       
-      objectSpec = _.assign(
+      objectSpec = Object.assign(
         objectSpec,
         { selectSet: [ traversalSpec ] }
       );
@@ -148,8 +148,8 @@ describe('Client tests - query commands:', function (){
       .once('result', function (result, raw){
 
         expect(result.returnval.objects).to.exist();
-        if( _.isArray(result.returnval.objects) ) {
-          expect( _.sample(result.returnval.objects).obj.attributes.type).to.be.equal('VirtualMachine');
+        if( Array.isArray(result.returnval.objects) ) {
+          expect( result.returnval.objects[0].obj.attributes.type).to.be.equal('VirtualMachine');
         } else {
           expect(result.returnval.objects.obj.attributes.type).to.be.equal('VirtualMachine');
         }
